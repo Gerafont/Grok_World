@@ -2,7 +2,7 @@ package randforpoker;
 
 /**
  *
- * @author GrokDen
+ * @author Gerafont
  */
 public class RandForPoker extends javax.swing.JFrame {
 
@@ -28,7 +28,7 @@ public class RandForPoker extends javax.swing.JFrame {
             }
         });
      
-        Rand1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Rand1.setFont(new java.awt.Font("Times New Roman", 1, 24)); 
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -57,18 +57,11 @@ public class RandForPoker extends javax.swing.JFrame {
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {                                      
        
         double c =  1 + Math.random() * 100;
-        Rand1.setText(String.valueOf((int)c));// TODO add your handling code here:
+        Rand1.setText(String.valueOf((int)c));
     }                                     
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
